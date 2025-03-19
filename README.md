@@ -2,7 +2,7 @@
 
 ## Purpose-Built for DAGs. Engineered for Speed.
 
-Dagenie is a high-performance, distributed database purpose-built to manage Directed Acyclic Graphs (DAGs). With disk persistence via BadgerDB, clustered storage with sharding, replication, and a powerful query language (DQL), Dagenie empowers developers and system architects to build, manage, and introspect complex DAG workflows at scale.
+DAGenie is a high-performance, distributed database purpose-built to manage Directed Acyclic Graphs (DAGs). With disk persistence via BadgerDB, clustered storage with sharding, replication, and a powerful query language (DQL), DAGenie empowers developers and system architects to build, manage, and introspect complex DAG workflows at scale.
 
 ---
 
@@ -26,23 +26,23 @@ Dagenie is a high-performance, distributed database purpose-built to manage Dire
 ### 🔧 Installation
 
 ```bash
-git clone https://github.com/aboyai/dagenie.git
-cd dagenie
-go build -o dagenie main.go
+git clone https://github.com/aboyai/DAGenie.git
+cd DAGenie
+go build -o DAGenie main.go
 ```
 
-### 🔍 Running Dagenie
+### 🔍 Running DAGenie
 
 ```bash
-./dagenie --config config.yaml
+./DAGenie --config config.yaml
 ```
 
 ### 🔍 Creating a DAG via CLI
 
 ```bash
-./dagenie create-dag --id mydag
-./dagenie add-task --dag mydag --id T1 --payload '{}' --depends []
-./dagenie query-dag --dag mydag
+./DAGenie create-dag --id mydag
+./DAGenie add-task --dag mydag --id T1 --payload '{}' --depends []
+./DAGenie query-dag --dag mydag
 ```
 
 ---
@@ -50,7 +50,7 @@ go build -o dagenie main.go
 ## Folder Structure
 
 ```
-dagenie/
+DAGenie/
 ├── cluster/
 │   ├── storage/            # BadgerDB FSM
 │   │   └── storage.go
@@ -67,7 +67,7 @@ dagenie/
 │   └── tcp/
 │       └── server.go       # TCP interface
 ├── proto/
-│   └── dagenie.proto       # gRPC interface
+│   └── DAGenie.proto       # gRPC interface
 ├── clients/                # Multilingual client libs
 │   ├── go/
 │   ├── java/
@@ -89,7 +89,7 @@ dagenie/
 ```yaml
 node_id: node-1
 bind_addr: 127.0.0.1:9000
-data_dir: ./dagenie/storage
+data_dir: ./DAGenie/storage
 raft:
   bind_addr: 127.0.0.1:7000
   join_addresses:
@@ -149,10 +149,10 @@ MIT License © 2025 Aboyai LLC
 
 For enterprise support, integration help, or queries:
 
-- Email: [support@dagenie.io](mailto\:support@dagenie.io)
-- Website: [https://dagenie.io](https://dagenie.io)
+- Email: [support@DAGenie.io](mailto\:support@DAGenie.io)
+- Website: [https://DAGenie.io](https://DAGenie.io)
 
 ---
 
-*Dagenie — Purpose-Built for DAGs. Engineered for Speed.*
+*DAGenie — Purpose-Built for DAGs. Engineered for Speed.*
 
