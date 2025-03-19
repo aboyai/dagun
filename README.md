@@ -26,23 +26,23 @@ DAGenie is a high-performance, distributed database purpose-built to manage Dire
 ### 🔧 Installation
 
 ```bash
-git clone https://github.com/aboyai/DAGenie.git
-cd DAGenie
-go build -o DAGenie main.go
+git clone https://github.com/aboyai/dagenie.git
+cd dagenie
+go build -o dagenie main.go
 ```
 
 ### 🔍 Running DAGenie
 
 ```bash
-./DAGenie --config config.yaml
+./dagenie --config config.yaml
 ```
 
 ### 🔍 Creating a DAG via CLI
 
 ```bash
-./DAGenie create-dag --id mydag
-./DAGenie add-task --dag mydag --id T1 --payload '{}' --depends []
-./DAGenie query-dag --dag mydag
+./dagenie create-dag --id mydag
+./dagenie add-task --dag mydag --id T1 --payload '{}' --depends []
+./dagenie query-dag --dag mydag
 ```
 
 ---
@@ -67,7 +67,7 @@ DAGenie/
 │   └── tcp/
 │       └── server.go       # TCP interface
 ├── proto/
-│   └── DAGenie.proto       # gRPC interface
+│   └── dagenie.proto       # gRPC interface
 ├── clients/                # Multilingual client libs
 │   ├── go/
 │   ├── java/
@@ -149,8 +149,8 @@ MIT License © 2025 Aboyai LLC
 
 For enterprise support, integration help, or queries:
 
-- Email: [support@DAGenie.io](mailto\:support@DAGenie.io)
-- Website: [https://DAGenie.io](https://DAGenie.io)
+- Email: [support@dagenie.io](mailto\:support@dagenie.io)
+- Website: [https://dagenie.io](https://dagenie.io)
 
 ---
 
