@@ -1,4 +1,4 @@
-# Dagenie
+# DAGenie
 
 ## Purpose-Built for DAGs. Engineered for Speed.
 
