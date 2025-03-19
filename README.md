@@ -1,6 +1,6 @@
 # Dagenie
 
-**Purpose-Built for DAGs. Engineered for Speed.**
+## Purpose-Built for DAGs. Engineered for Speed.
 
 Dagenie is a high-performance, distributed database purpose-built to manage Directed Acyclic Graphs (DAGs). With disk persistence via BadgerDB, clustered storage with sharding, replication, and a powerful query language (DQL), Dagenie empowers developers and system architects to build, manage, and introspect complex DAG workflows at scale.
 
@@ -89,7 +89,7 @@ dagenie/
 ```yaml
 node_id: node-1
 bind_addr: 127.0.0.1:9000
-data_dir: ./dagneticdb/storage
+data_dir: ./dagenie/storage
 raft:
   bind_addr: 127.0.0.1:7000
   join_addresses:
