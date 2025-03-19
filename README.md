@@ -141,7 +141,7 @@ We welcome contributions! Please submit issues and pull requests.
 
 ## License
 
-MIT License © 2025 Aboyai LLC
+Apache 2.0 License © 2025 Aboyai LLC
 
 ---
 
